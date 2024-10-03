@@ -34,12 +34,49 @@ function addQuote(){
     //Removes placeholder
     if (output == "Nothing yet!"){
         document.getElementById("output-content").innerHTML = "";
+        output = document.getElementById("output-content").innerHTML;
     }
 
     //Formats the Quote
     formatted_quote = page_num.concat(' - "',quote,'"<br><br>');
+    let new_output = output + formatted_quote;
 
     //Pushes everything back to the document
-    document.getElementById("output-content").innerHTML += formatted_quote;
+    document.getElementById("output-content").innerHTML = new_output;
     document.getElementById("quote").value = '';
+    localStorage['stored_quotes'] = new_output;
+}
+
+function clearQuotes(){
+    if(confirm("Clear all quotes?")){
+        document.getElementById("output-content").innerHTML = "Nothing yet!";
+        localStorage['stored_quotes'] = "";
+    }
+}
+
+
+function chapterBreak(){
+    let output = document.getElementById("output-content").innerHTML;
+
+    //Removes placeholder
+    if (output == "Nothing yet!") {
+        document.getElementById("output-content").innerHTML = "";
+        output = document.getElementById("output-content").innerHTML;
+    }
+
+    //Gets chapter name
+    let chaptername = prompt("Enter the name of the chapter:","");
+    if (chaptername == null || chaptername ==""){
+        chaptername = "CHAPTER BREAK";
+    }
+
+    //Adds heading signifer if markdown is selected
+    if(document.querySelector('.Markdown').checked){
+        chaptername = "#####" + chaptername;
+    }
+
+    //Sends it to the file
+    let new_output = output + "<br><br><b>"+chaptername+"</b><br><br>";
+    document.getElementById("output-content").innerHTML = new_output;
+    localStorage['stored_quotes'] = new_output;
 }

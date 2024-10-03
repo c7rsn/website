@@ -22,7 +22,9 @@
 
 Example:
 6 - "...a legal tender, or in other language, a compulsive payment, it is a most presumptuous attempt at arbitrary power."
-9 - "Bad economic policy can destroy a civilization—no policy is more dangerous than bad monetary policy."</div>
+9 - "Bad economic policy can destroy a civilization—no policy is more dangerous than bad monetary policy."
+
+If the markdown checkbox is selected, it will add five hashes to a chapter break, signifying a heading in Markdown.</div>
             </div>
 
         <form action="javascript:addQuote()">
@@ -30,11 +32,18 @@ Example:
                 <p>Page Number</p>
                 <input type = "number" id = "pagenum" name = "pagenum" required>
                 <br><br>
+                
                 <p> Quote </p>
                 <textarea type = "text" id = "quote" name = "quote" cols="80" rows="5" required></textarea>
                 <br><br>
+                
                 <input type="submit" id = "Submit" value="Submit" class="button">
                 <input type="reset" id="Reset" value="Reset" class="button">
+                
+                <input type="button" id="Chapter" value="Chapter Break" class="button" onclick=chapterBreak()>
+                
+                <label for="Markdown" class="button">Markdown?</label>
+                <input type="checkbox" id="Markdown" class="Markdown">
             </div>
         </form>
 
@@ -45,17 +54,15 @@ Example:
             <p class="inset-text"><span id="output-content">Nothing yet!</span></p>
         </div>
 
+        <button onclick = clearQuotes()>Clear Output</button>
+
         <hr>
 
         <p class = "footer">Quote Tool Version 1.0 | 10/3/24</p>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="quotes.js"></script>
-        
-        <!-- Remove these comments for fun!
-        <script src="/../../js/index.js"></script>
-        <script>window.onload = setInterval(function () { fun_text("page-title", "Quote Tool"); }, 250);</script>
-        -->
+        <script> var s = localStorage['stored_quotes']; if (s){document.getElementById("output-content").innerHTML=s}</script>
 
     </body>
 
