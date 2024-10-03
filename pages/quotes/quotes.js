@@ -63,20 +63,22 @@ function chapterBreak(){
         document.getElementById("output-content").innerHTML = "";
         output = document.getElementById("output-content").innerHTML;
     }
-
     //Gets chapter name
     let chaptername = prompt("Enter the name of the chapter:","");
-    if (chaptername == null || chaptername ==""){
-        chaptername = "CHAPTER BREAK";
-    }
+    if (chaptername !== null){
+        if (chaptername == ""){
+            chaptername = "CHAPTER BREAK";
+        }
 
-    //Adds heading signifer if markdown is selected
-    if(document.querySelector('.Markdown').checked){
-        chaptername = "#####" + chaptername;
-    }
+        //Adds heading signifer if markdown is selected
+        if(document.querySelector('.Markdown').checked){
+            chaptername = "##### " + chaptername;
+        }
 
-    //Sends it to the file
-    let new_output = output + "<br><br><b>"+chaptername+"</b><br><br>";
-    document.getElementById("output-content").innerHTML = new_output;
-    localStorage['stored_quotes'] = new_output;
+        //Sends it to the page
+        let new_output = output + "<br><br>"+chaptername+"<br><br>";
+        document.getElementById("output-content").innerHTML = new_output;
+        localStorage['stored_quotes'] = new_output;
+        console.log("ran")
+    }
 }
