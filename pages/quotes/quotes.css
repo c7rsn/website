@@ -23,19 +23,19 @@ h1{
 .inset-text{
     display: block;
     text-align:left;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: auto;
     padding-bottom: 50px;
-    max-width:100%;
+    width: 1000px;
+    max-width: 90%;
 }
 
 .exp-text {
     text-align: left;
-    margin-left: 33%;
-    margin-right: 33%;
+    margin: auto;
     border: 1px black solid;
     padding: 10px;
-    max-width:100%;
+    width:900px;
+    max-width: 90%;
 }
 
 .tip{
@@ -52,7 +52,7 @@ h1{
 
 textarea {
     text-align: left;
-    width: 90%;
+    width: 80%;
     max-width: 600px;
 }
 
@@ -75,16 +75,6 @@ label{
 }
 
 @media (max-width: 1200px) {
-    .exp-text {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .inset-text {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
     .back-link {
         margin-left: 5%;
     }
