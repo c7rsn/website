@@ -23,9 +23,10 @@ h1{
 .inset-text{
     display: block;
     text-align:left;
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
     padding-bottom: 50px;
+    max-width:100%;
 }
 
 .exp-text {
@@ -34,6 +35,18 @@ h1{
     margin-right: 33%;
     border: 1px black solid;
     padding: 10px;
+    max-width:100%;
+}
+
+@media (max-width: 1200px) {
+    .exp-text {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .inset-text{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 .tip{
@@ -50,6 +63,8 @@ h1{
 
 textarea {
     text-align: left;
+    width: 80%;
+    max-width: 600px;
 }
 
 .multiline {
