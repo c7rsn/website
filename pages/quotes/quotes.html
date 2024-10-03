@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>C7RSN - Quotes</title>
+        <link rel="stylesheet" href="/../../css/global.css">
+        <link rel="stylesheet" href="quotes.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <p class="back-link"><a href="../../index.html">Back</a></p>
+        <h1><b><span id="page-title">Quote Tool </span></b></h1>
+
+        <div class="tip">
+            <label for="exp">Instructions</label>
+            <button id="exp-button" onclick="tooltip()">Show</button>
+            <div class="multiline exp-text hide" id="exp">This tool is used to format ill-looking copy and pastes into a standard format with a page number.
+
+Example:
+6 - "...a legal tender, or in other language, a compulsive payment, it is a most presumptuous attempt at arbitrary power."
+9 - "Bad economic policy can destroy a civilization—no policy is more dangerous than bad monetary policy."</div>
+            </div>
+
+        <form action="javascript:addQuote()">
+            <div class="form">
+                <p>Page Number</p>
+                <input type = "number" id = "pagenum" name = "pagenum" required>
+                <br><br>
+                <p> Quote </p>
+                <textarea type = "text" id = "quote" name = "quote" cols="80" rows="5" required></textarea>
+                <br><br>
+                <input type="submit" id = "Submit" value="Submit" class="button">
+                <input type="reset" id="Reset" value="Reset" class="button">
+            </div>
+        </form>
+
+        <hr>
+
+        <div class="output">
+            <h3><b>Output</b></h3>
+            <p class="inset-text"><span id="output-content">Nothing yet!</span></p>
+        </div>
+
+        <hr>
+
+        <p class = "footer">Quote Tool Version 1.0 | 10/3/24</p>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="quotes.js"></script>
+        
+        <!-- Remove these comments for fun!
+        <script src="/../../js/index.js"></script>
+        <script>window.onload = setInterval(function () { fun_text("page-title", "Quote Tool"); }, 250);</script>
+        -->
+
+    </body>
+
+</html>

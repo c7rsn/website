@@ -1,0 +1,10 @@
+
+Add caching
+Add clear button
+Add chapter break button
+Add markdown checkbox
+Add tab explainer
+
+Fix quotes input centering
+
+Add scrolling window so you can always see bottom of quotes

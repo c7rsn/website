@@ -1,0 +1,71 @@
+
+*{
+    text-align:center;
+}
+
+.output{
+    text-wrap: wrap;
+}
+
+h1, h3{
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+h1{
+    padding-top: 20px;
+}
+
+.output{
+    padding: 10px;
+}
+
+.inset-text{
+    display: block;
+    text-align:left;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 50px;
+}
+
+.exp-text {
+    text-align: left;
+    margin-left: 33%;
+    margin-right: 33%;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.tip{
+    padding-bottom: 20px;
+}
+
+.button{
+    margin-left: 10px;
+}
+
+.footer{
+    padding: 10px;
+}
+
+textarea {
+    text-align: left;
+}
+
+.multiline {
+    white-space: pre-wrap;
+}
+
+.hide{
+    display: none;
+}
+
+label{
+    padding-bottom:5px;
+}
+
+.back-link{
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20%;
+}
