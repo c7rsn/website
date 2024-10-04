@@ -12,3 +12,19 @@ img{
     max-width: 100%;
     padding: 20px;
 }
+
+.back-link {
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 20%;
+}
+
+.fourohfour-text{
+    font-size: 70px;
+}
+
+@media (max-width: 800px){
+    .fourohfour-text{
+        font-size: 40px;
+    }
+}
