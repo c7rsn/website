@@ -26,6 +26,9 @@
     width: 100px;
     height: 100px;
     font-size: 60px;
+    text-shadow: darkgray 1px 0 10px;
+    border-radius: 5px;
+    border: slategray 1px solid;
 }
 
 .score-font{
