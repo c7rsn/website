@@ -13,6 +13,11 @@
     margin: auto;
 }
 
+.game-body{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
 .game-text{
     margin: auto;
     padding: 20px;
@@ -66,9 +71,15 @@
 }
 
 @media (max-width: 950px){
+    .game-body{
+        grid-template-columns: repeat(5,1fr);
+        width: 375px;
+    }
+
     .game-button{
         width: 75px;
         height: 75px;
+        font-size: 45px;
     }
     
     .game{
