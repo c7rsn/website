@@ -28,3 +28,8 @@ img{
         font-size: 40px;
     }
 }
+@media (max-width: 1200px) {
+    .back-link {
+        margin-left: 5%;
+    }
+}

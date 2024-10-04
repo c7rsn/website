@@ -1,2 +1,0 @@
-
-Add scrolling window so you can always see bottom of quotes
