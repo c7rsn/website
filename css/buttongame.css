@@ -94,6 +94,7 @@
         width: 250px;
         margin: auto;
         align-content: center;
+        text-align: center;
     }
         
     .game-button {
@@ -101,9 +102,10 @@
         height: 50px;
         font-size: 20px;
         text-align: center;
+        align-content: center;
     }
         
     .game {
-        width: 300px;
+        width: 250px;
         }
 }
