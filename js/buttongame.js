@@ -1,28 +1,28 @@
 const buttons = [
-    new GameButton("key", "&#128273;", "game-body", addScore, 1),
+    new GameButton("key", "&#128273;", "game-body", addScore, 0),
     new GameButton("demon", "&#128520;", "game-body", addScore, 6.66), // Done.
-    new GameButton("melon", "&#127817;", "game-body", addScore, 1),
-    new GameButton("shocked", "&#128576;", "game-body", addScore, 1),
+    new GameButton("melon", "&#127817;", "game-body", addScore, 1.5),
+    new GameButton("shocked", "&#128576;", "game-body", addScore, -20),
     new GameButton("ogre", "&#128121;", "game-body", setScore, -1000), // Done.
     new GameButton("poop", "&#128169;", "game-body", addScore, -1),
     new GameButton("puke", "&#129326;", "game-body", addScore, -5),
-    new GameButton("diamond", "&#128142;", "game-body", addScore, 10), // Done.
+    new GameButton("diamond", "&#128142;", "game-body", addScore, 15), // Done.
     new GameButton("floppy", "&#128190;", "game-body", addScore, 0.5),
     new GameButton("mail", "&#128231;", "game-body", sendMail, 10),
-    new GameButton("bag", "&#128176;", "game-body", addScore, 1),
-    new GameButton("head", "&#128511;", "game-body", addScore, 1),
+    new GameButton("bag", "&#128176;", "game-body", randScore, 100),
+    new GameButton("head", "&#128511;", "game-body", setScore, 333),
     new GameButton("shuffle", "&#128256;", "game-body", shuffleScore),
     new GameButton("dice", "&#127922;", "game-body", randScore, 6), // Done.
-    new GameButton("lock", "&#128274;", "game-body", addScore, 1),
-    new GameButton("cops", "&#128659;", "game-body", addScore, 1),
-    new GameButton("bathroom", "&#128699;", "game-body", addScore, 1),
+    new GameButton("lock", "&#128274;", "game-body", addScore, 0),
+    new GameButton("cops", "&#128659;", "game-body", addScore, -10),
+    new GameButton("bathroom", "&#128699;", "game-body", addScore, 4),
     new GameButton("crying", "&#128557;", "game-body", setScore, 0), // Done.
     new GameButton("cow", "&#128004;", "game-body", addScore, 1),
     new GameButton("mouse", "&#128045;", "game-body", multScore, 1.01), // Done.
-    new GameButton("beers", "&#127867;", "game-body", addScore, 1),
+    new GameButton("beers", "&#127867;", "game-body", addScore, 2),
     new GameButton("crazy", "&#129322;", "game-body", crazy, 200), // Done.
     new GameButton("donut", "&#127849;", "game-body", multScore, 0.01), //Done.
-    new GameButton("tophat", "&#127913;", "game-body", addScore, 1),
+    new GameButton("tophat", "&#127913;", "game-body", addScore, 7),
     new GameButton("sax", "&#127927;", "game-body", addScore, 3), // Done.
 ]
 
