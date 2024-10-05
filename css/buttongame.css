@@ -91,21 +91,24 @@
 @media (max-width: 700px){
     .game-body {
         grid-template-columns: repeat(5, 1fr);
-        width: 250px;
+        width: 280px;
         margin: auto;
         align-content: center;
         text-align: center;
     }
         
     .game-button {
-        width: 50px;
-        height: 50px;
+        width: 56px;
+        height: 56px;
         font-size: 20px;
         text-align: center;
         align-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: auto;
     }
         
     .game {
-        width: 250px;
+        width: 280px;
         }
 }
