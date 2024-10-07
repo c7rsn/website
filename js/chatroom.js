@@ -14,7 +14,8 @@ document.getElementById('chat-submit').addEventListener('click', function (e) {
 socket.on('message', function (data) {
     const chatDisplay = document.querySelector('.chat-display');
     const msgElement = document.createElement('p');
-    msgElement.textContent = `${data.username}: ${data.message}`;
+    msgElement.textContent = `<b>${data.username}:</b> ${data.message}`;
+    msgElement.style = "text-align: left;";
     chatDisplay.appendChild(msgElement);
 });
 
