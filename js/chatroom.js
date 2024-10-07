@@ -1,4 +1,4 @@
-const socket = io('YOUR_BACKEND_SERVER_URL'); // replace with your backend URL
+const socket = io('https://git.heroku.com/safe-caverns-06535.git'); // replace with your backend URL
 
 document.getElementById('chat-submit').addEventListener('click', function (e) {
     e.preventDefault();
