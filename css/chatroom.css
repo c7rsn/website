@@ -50,9 +50,18 @@ label, .chat-submit {
     margin-left: 10px;
 }
 
+.chat-display p {
+    margin: 5px 0;
+    padding: 0;
+}
+
 @media (max-width: 1200px) {
     .back-link {
         margin-left: 5%;
+    }
+
+    .chat-display{
+        height: 300px;
     }
     
     .chat-input{
