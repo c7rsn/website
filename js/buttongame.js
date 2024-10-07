@@ -179,11 +179,6 @@ function reset() {
 function tooltip() {
     exp = document.getElementById("exp");
     if (exp.className == "multiline exp-text hide") {
-        if (document.getElementById("click-value").innerHTML == 0){
-            document.getElementById("hint").innerHTML = "You don't really need a hint do you?";
-        } else {
-            document.getElementById("hint").innerHTML = "If a button doesn't do anything, you haven't figured out what it does yet.";
-        }
         document.getElementById("exp").className = "multiline exp-text"
         document.getElementById("exp-button").innerHTML = "Hide"
     } else {

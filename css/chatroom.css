@@ -46,8 +46,25 @@ label, .chat-submit {
     margin-left: 20%;
 }
 
+.chat-submit{
+    margin-left: 10px;
+}
+
 @media (max-width: 1200px) {
     .back-link {
         margin-left: 5%;
+    }
+    
+    .chat-input{
+        display: block;
+    }
+
+    .chat-name, .chat-text{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .chat-submit{
+        margin: 10px;
     }
 }
