@@ -25,6 +25,9 @@ label, .chat-submit {
     height: 500px;
     border-radius: 5px;
     text-align: left;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    word-wrap: break-word;
 }
 
 .chat-name{
