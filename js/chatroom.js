@@ -1,9 +1,22 @@
 const socket = io('https://safe-caverns-06535-0283d8fae041.herokuapp.com/'); // replace with your backend URL
 
+function sanitize(string) {
+    const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#x27;',
+        "/": '&#x2F;',
+    };
+    const reg = /[&<>"'/]/ig;
+    return string.replace(reg, (match) => (map[match]));
+}
+
 document.getElementById('chat-submit').addEventListener('click', function (e) {
     e.preventDefault();
-    const username = document.getElementById('chat-name').value;
-    const message = document.getElementById('chat-text').value;
+    const username = sanitize(document.getElementById('chat-name').value);
+    const message = sanitize(document.getElementById('chat-text').value);
 
     if (username && message) {
         localStorage['chatroom_username'] = username;

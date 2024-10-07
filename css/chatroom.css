@@ -61,6 +61,7 @@ label, .chat-submit {
     }
 
     .chat-display{
+        display: block;
         height: 200px;
     }
     
