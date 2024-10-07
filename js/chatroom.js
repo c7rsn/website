@@ -25,7 +25,7 @@ document.getElementById('chat-submit').addEventListener('click', function (e) {
     }
 });
 
-socket.on('message', function (data) {
+socket.on('msg_chat', function (data) {
     const chatDisplay = document.querySelector('.chat-display');
     const msgElement = document.createElement('p');
     msgElement.innerHTML = `<b>${data.username}:</b> ${data.message}`;
@@ -34,10 +34,10 @@ socket.on('message', function (data) {
     chatDisplay.scrollTop = chatDisplay.scrollHeight;
 });
 
-socket.on('connected', function () {
+socket.on('msg_sys', function (msg) {
     const chatDisplay = document.querySelector('.chat-display');
     const msgElement = document.createElement('p');
-    msgElement.innerHTML = "New User Connected.";
+    msgElement.innerHTML = msg;
     msgElement.style = "text-align: left; padding-left: 10px; opacity: 80%;";
     chatDisplay.appendChild(msgElement);
     chatDisplay.scrollTop = chatDisplay.scrollHeight;
