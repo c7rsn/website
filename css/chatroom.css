@@ -1,0 +1,50 @@
+.header {
+    text-align: center;
+}
+
+.chatroom{
+    text-align: left;
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+
+.chat-input{
+    display: inline-flex;
+    padding: 10px;
+    width: 100%;
+}
+
+label, .chat-submit {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.chat-display{
+    border: grey 1px solid;
+    height: 500px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.chat-name{
+    width: 20%;
+    text-align: left;
+}
+
+.chat-text{
+    width: 80%;
+    text-align: left;
+}
+
+.back-link {
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 20%;
+}
+
+@media (max-width: 1200px) {
+    .back-link {
+        margin-left: 5%;
+    }
+}
