@@ -34,4 +34,12 @@ socket.on('message', function (data) {
     chatDisplay.scrollTop = chatDisplay.scrollHeight;
 });
 
+socket.on('connected', function () {
+    const chatDisplay = document.querySelector('.chat-display');
+    const msgElement = document.createElement('p');
+    msgElement.innerHTML = "New User Connected.";
+    msgElement.style = "text-align: left; padding-left: 10px; opacity: 80%;";
+    chatDisplay.appendChild(msgElement);
+    chatDisplay.scrollTop = chatDisplay.scrollHeight;
+});
 
