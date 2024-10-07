@@ -6,6 +6,7 @@ document.getElementById('chat-submit').addEventListener('click', function (e) {
     const message = document.getElementById('chat-text').value;
 
     if (username && message) {
+        localStorage['chatroom_username'] = username;
         socket.emit('chatMessage', { username, message });
         document.getElementById('chat-text').value = ''; // clear message input
     }

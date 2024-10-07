@@ -37,13 +37,13 @@
 
     <div class="footer">
         <hr>
-        <p class="footer">Chatroom Version 0.1 | 10/7/24</p>
+        <p class="footer">Chatroom Version 0.12 | 10/7/24</p>
     </div>
 
     <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/chatroom.js"></script>
-    <script>//window.onload = startGame()</script>
+    <script> var s = localStorage['chatroom_username']; if (s) { document.getElementById("chat-name").value = s }</script>
 </body>
 
 </html>
