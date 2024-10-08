@@ -20,7 +20,7 @@
     </div>
 
     <div class="content">
-        <form class="content-input" action="javascript:askDoctor()">
+        <form class="content-input" id="doctor-form">
             <label for = "symptoms">What are your symptoms?</label>
             <input type = "text" id = "symptoms" class = "symptoms"/>
             <input type = "submit" value="Submit" id = "submit" class = "submit"/>
@@ -33,13 +33,13 @@
                 <img src="/assets/images/cringe.png"/>
                 <p style = "font-size: 10px;">Dr. Marty Computer, PhD of Journalism</p>
             </div>
-            <p class = "output">Hello. I'm Dr. Computer. I'm here to help you!</p>
+            <p class = "output-text" id="output-text">Hello. I'm Dr. Computer. I'm here to help you!</p>
         </div>
     </div>
 
     <div class="footer">
         <hr>
-        <p class="footer">Dr. Computer Version 0.1 | 10/7/24</p>
+        <p class="footer">Dr. Computer Version 0.12 | 10/7/24</p>
     </div>
 
     <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
