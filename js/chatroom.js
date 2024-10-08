@@ -50,6 +50,18 @@ socket.on('msg_sys', function (msg) {
     chatDisplay.scrollTop = chatDisplay.scrollHeight;
 });
 
+socket.on('connect', () => {
+    console.log('WebSocket connected:', socket.id);
+});
+
+socket.on('disconnect', (reason) => {
+    console.log('Disconnected:', reason);
+});
+
+socket.on('reconnect_attempt', () => {
+    console.log('Trying to reconnect...');
+});
+
 //Add online users number, send it through connect/disconnect
 //Try to get usernames in connect/disconnect messages
 //Load the last ten messages when you log in
