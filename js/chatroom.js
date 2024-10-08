@@ -43,3 +43,6 @@ socket.on('msg_sys', function (msg) {
     chatDisplay.scrollTop = chatDisplay.scrollHeight;
 });
 
+//Add online users number, send it through connect/disconnect
+//Try to get usernames in connect/disconnect messages
+//Load the last ten messages when you log in
