@@ -25,11 +25,13 @@ document.getElementById('chat-submit').addEventListener('click', function (e) {
     if (username && message) {
         localStorage['chatroom_username'] = username;
         socket.emit('chatMessage', { username, message });
+        console.log("Chat Message Sent.");
         document.getElementById('chat-text').value = ''; // clear message input
     }
 });
 
 socket.on('msg_chat', function (data) {
+    console.log("Chat Message Recieved.");
     const chatDisplay = document.querySelector('.chat-display');
     const msgElement = document.createElement('p');
     msgElement.innerHTML = `<b>${data.username}:</b> ${data.message}`;
@@ -39,6 +41,7 @@ socket.on('msg_chat', function (data) {
 });
 
 socket.on('msg_sys', function (msg) {
+    console.log("System Message Recieved.");
     const chatDisplay = document.querySelector('.chat-display');
     const msgElement = document.createElement('p');
     msgElement.innerHTML = msg;
