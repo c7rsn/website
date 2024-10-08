@@ -25,7 +25,7 @@ document.getElementById('chat-submit').addEventListener('click', function (e) {
     if (username && message) {
         localStorage['chatroom_username'] = username;
         socket.emit('chatMessage', { username, message });
-        console.log("Chat Message Sent.");
+        console.log("Chat Message Sent." {username, message});
         document.getElementById('chat-text').value = ''; // clear message input
     }
 });
