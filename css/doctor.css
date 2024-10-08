@@ -2,6 +2,11 @@
     text-align: center;
 }
 
+.content{
+    width: 1500px;
+    margin: auto;
+}
+
 .content-input{
     width: 60%;
     margin: auto;
@@ -24,7 +29,7 @@
 
 .headshot{
     height: 200px;
-    width: 220px;
+    width: 250px;
     border: grey 1px solid;
     margin-right: 20px;
     box-shadow: 5px 5px 5px gray;
@@ -61,6 +66,7 @@
     .headshot{
         margin: auto;
         height: 220px;
+        width: 220px;
     }
 
     .output{
@@ -84,5 +90,9 @@
         margin-bottom: 10px;
         margin: auto;
         text-align: center;
+    }
+
+    .content{
+        width: 100%;
     }
 }
