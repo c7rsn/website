@@ -1,4 +1,8 @@
-const socket = io('https://safe-caverns-06535-0283d8fae041.herokuapp.com/'); // replace with your backend URL
+const socket = io('https://safe-caverns-06535-0283d8fae041.herokuapp.com/', {
+    transports: ["websocket"],
+    reconnectionAttempts: 5,
+    timeout: 20000
+}); // replace with your backend URL
 
 function sanitize(string) {
     const map = {
