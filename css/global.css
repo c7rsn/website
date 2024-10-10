@@ -11,6 +11,9 @@ img{
     width: 600px;
     max-width: 100%;
     padding: 20px;
+    margin: auto;
+    -webkit-user-drag: none;
+    user-select: none;    
 }
 
 .back-link {
@@ -23,6 +26,65 @@ img{
     font-size: 70px;
 }
 
+.pages{
+    display: grid;
+    grid: auto / auto auto auto;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+h4, p {
+    text-align: center;
+    margin: auto;
+}
+
+.bottom{
+    display: grid;
+    grid: auto / auto auto auto;
+    margin: auto;
+    width: 90%;
+    align-content: stretch;
+}
+
+.guestbook{
+    border: 1px solid black;
+    padding: 10px;
+    width: 600px;
+    min-height: 300px;
+    margin: auto;
+    margin-top: 0px;
+    height: 600px;
+    background-color: lightgray;
+}
+
+.guest-input{
+    height: 2em;
+    width: 30em;
+    margin: auto;
+}
+
+.guest-output{
+    border: 1px solid gray;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: left;
+    overflow-y: scroll;
+    height: 460px;
+    background-color: white;
+}
+
+.guest-submit{
+    transform: translateY(-6px);
+    margin-top: 7px;
+}
+
+.guest-output-text{
+    text-align: left;
+}
+
 @media (max-width: 800px){
     .fourohfour-text{
         font-size: 40px;
@@ -31,5 +93,21 @@ img{
 @media (max-width: 1200px) {
     .back-link {
         margin-left: 5%;
+    }
+    .pages{
+        display: block;
+    }
+    .bottom{
+        display: block;
+    }
+    .guest-input{
+        width: 20em;
+    }
+    .guestbook{
+        width: 90%;
+        height: 400px;
+    }
+    .guest-output{
+        height: 250px;
     }
 }

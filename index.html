@@ -11,16 +11,44 @@
 </head>
 
 <body>
-    <h1><b><span id="site-name">Welcome to C7RSN.com</span></b></h1>
-    <h4> Pages </h3>
-    <p><a href="/quotetool.html">Quotes Tool</a></p>
-    <p><a href="/buttongame.html">Button Game</a></p>
-    <p><a href="/chatroom.html" id = "chatroom-link">&#x276F; Chatroom &#x276E;</a></p>
-    <p><a href="/doctor.html">Dr. Computer</a></p>
+    <div class="top-content" id="top-content">
+        <h1><b><span id="site-name">Welcome to C7RSN.com</span></b></h1>
+        <h3> Pages </h3>
+        <p><a href="/chatroom.html" id="chatroom-link">&#x276F; Chatroom &#x276E;</a></p>
+        <div class = "pages" id="pages-div">
+            <div class = "tools" id = "tools-div">
+                <h5><b>Tools</b></h5>
+                <p><a href="/quotetool.html">Quotes Tool</a></p>
+            </div>
+
+            <div class="games" id="games-div">
+                <h5><b>Games</b></h5>
+                <p><a href="/buttongame.html">Button Game</a></p>
+            </div>
+
+            <div class="toys" id="toys-div">
+                <h5><b>Toys</b></h5>
+                <p><a href="/doctor.html">Dr. Computer</a></p>
+
+            </div>
+        </div>
+    </div>
     <br>
     <hr>
-    <br>
-    <img src="/assets/images/cringe.png"/>
+    <div class = "bottom" id = "bottom">
+        <div class = "guestbook" id="guestbook">
+            <h3 style="margin:0px; padding:0px;""><b>Guestbook</b></h3>
+            <p style="margin:0px; padding:0px; opacity:80%; padding-bottom:2px;">Please sign the guestbook :)</p>
+            <form class="guest-form" id="guest-form">
+                <textarea type="text" id="guest-input" class="guest-input" name="guest-input" required></textarea>
+                <input type="submit" id="guest-submit" class="guest-submit" value="Submit">
+                <div class="guest-output">
+                    <p class="guest-output-text" id="guest-output-text">This feature doesn't work yet!</p>
+                </div>
+            </form>
+        </div>
+        <img src="/assets/images/cringe.png"/>
+    </div>
 
     <script src="/js/index.js" defer></script>
     <script>window.onload = setInterval(function () { fun_text("site-name","Welcome to C7RSN.com"); flash_text("chatroom-link");}, 250);</script>

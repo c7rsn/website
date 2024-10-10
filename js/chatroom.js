@@ -65,3 +65,4 @@ socket.on('reconnect_attempt', () => {
 //Add online users number, send it through connect/disconnect
 //Try to get usernames in connect/disconnect messages
 //Load the last ten messages when you log in
+//Add online users number to link on index
