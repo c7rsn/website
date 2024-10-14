@@ -10,6 +10,10 @@ function checkKey(e) {
         e.preventDefault();
         document.getElementById('pagenum').value = parseFloat(document.getElementById('pagenum').value) - 1;
     }
+    else if (e.keyCode == '13'){
+        e.preventDefault();
+        addQuote();
+    }
 }
 
 function tooltip(){
@@ -56,7 +60,8 @@ function addQuote(){
 
     //Pushes everything back to the document
     document.getElementById("output-content").innerHTML = new_output;
-    document.getElementById("quote").value = '';
+    document.getElementById("quote").value = "";
+    document.getElementById("quote").selectionEnd = 0;
     localStorage['stored_quotes'] = new_output;
     document.getElementById("output").scrollTop = document.getElementById("output").scrollHeight;
 }
