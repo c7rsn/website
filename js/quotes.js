@@ -1,3 +1,16 @@
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+    e = e || window.event;
+    if (e.keyCode == '38') {
+        e.preventDefault();
+        document.getElementById('pagenum').value = parseFloat(document.getElementById('pagenum').value) + 1;
+    }
+    else if (e.keyCode == '40') {
+        e.preventDefault();
+        document.getElementById('pagenum').value = parseFloat(document.getElementById('pagenum').value) - 1;
+    }
+}
 
 function tooltip(){
     exp = document.getElementById("exp");
@@ -45,6 +58,7 @@ function addQuote(){
     document.getElementById("output-content").innerHTML = new_output;
     document.getElementById("quote").value = '';
     localStorage['stored_quotes'] = new_output;
+    document.getElementById("output").scrollTop = document.getElementById("output").scrollHeight;
 }
 
 function clearQuotes(){
@@ -79,6 +93,7 @@ function chapterBreak(){
         let new_output = output + "<br><br>"+chaptername+"<br><br>";
         document.getElementById("output-content").innerHTML = new_output;
         localStorage['stored_quotes'] = new_output;
+        document.getElementById("output").scrollTop = document.getElementById("output").scrollHeight;
     }
 }
 
@@ -106,5 +121,6 @@ function sectionBreak() {
         let new_output = output + sectionname + "<br><br>";
         document.getElementById("output-content").innerHTML = new_output;
         localStorage['stored_quotes'] = new_output;
+        document.getElementById("output").scrollTop = document.getElementById("output").scrollHeight;
     }
 }

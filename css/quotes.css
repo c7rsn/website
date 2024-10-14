@@ -18,6 +18,11 @@ h1{
 
 .output{
     padding: 10px;
+    max-height: 550px;
+    width: 1000px;
+    overflow-y: scroll;
+    margin: auto;
+    border: solid gray 1px;
 }
 
 .inset-text{
@@ -77,5 +82,11 @@ label{
 @media (max-width: 1200px) {
     .back-link {
         margin-left: 5%;
+    }
+    .output{
+        max-width: 90%;
+        overflow-y: visible;
+        max-height: none;
+        height: auto;
     }
 }
