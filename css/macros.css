@@ -1,0 +1,47 @@
+
+input{
+    width: 70px;
+}
+
+.calculator {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+
+.calculator {
+    padding: 15px;
+    margin: auto;
+}
+
+.bodyweight, .p-ratio, .split{
+    margin: 15px;
+}
+
+.macro-split{
+    display: grid;
+    grid: 150px / auto auto auto;
+    width: 50%;
+    margin: auto;
+    height: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.macro-item{
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.output-info {
+    border: solid 1px black;
+    width: 30%;
+    padding: 10px;
+    margin: auto;
+}
+
+.output-info p{
+    text-align: left;
+    margin: auto;
+}
