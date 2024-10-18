@@ -40,6 +40,10 @@ function calculate(){
     let tf = (((tp * 4) / sp) * sf) / 9;
     let tk = (tc * 4) + (tp * 4) + (tf * 9);
 
+    document.getElementById("split-c").value = Math.round(sc * 100);
+    document.getElementById("split-p").value = Math.round(sp * 100);
+    document.getElementById("split-f").value = Math.round(sf * 100);
+
     document.getElementById("total-calories").innerHTML = Math.round(tk)+"cal";
     document.getElementById("total-carbs").innerHTML = Math.round(tc)+"g";
     document.getElementById("total-protein").innerHTML = Math.round(tp)+"g";
